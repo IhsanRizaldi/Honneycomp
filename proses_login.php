@@ -14,10 +14,10 @@ $login = mysqli_query($connect, "SELECT * FROM tb_admin WHERE username = '$usern
 $row=mysqli_fetch_array($login);
 
   if ($row['username'] == $username AND $row['password'] == $pass){
-   session_start(); 
+   $_SESSION['login'] = true;
     $_SESSION['admin'] = $row['username'];//menyimpan session username
     header('location:admin/index.php');}
 
   else{ //kalo levelnya bukan user ato admin maka masuk sini
-    echo "<script>alert('Maaf, Pastikan Username dan Password anda benar!'); window.location=('loginpakar.php');</script>";}
+    echo "<script>alert('Maaf, Pastikan Username dan Password anda benar!'); window.location=('login.php');</script>";}
 ?>

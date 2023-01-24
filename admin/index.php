@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (!isset($_SESSION['login'])) {
+    header("Location:../login.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +34,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav sidebar sidebar-light accordion" style="background-color: #ffb703;" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -45,13 +51,6 @@
                     <span>Dashboard</span></a>
             </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Interface
-            </div>
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -110,14 +109,12 @@
                     <hr>
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
 
                     <main>
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">History</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -125,22 +122,22 @@
                                     <thead>
                                         <tr>
                                             <th>Nama</th>
-                                            <th>Pertanyaan</th>
+                                            <th>kode_solusi</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <?php
                                     include '../koneksi.php';
-                                    $sql = "SELECT*FROM tb_bertanya";
+                                    $sql = "SELECT*FROM tb_history JOIN tb_solusi on tb_solusi.kode_solusi = tb_history.kode_solusi";
                                     $query = mysqli_query($connect,$sql);
                                     while($row = mysqli_fetch_assoc($query)):
                                     ?>
                                     <tbody>
                                         <tr>
                                             <td><?= $row['nama']; ?></td>
-                                            <td><?= $row['pertanyaan']; ?></td>
+                                            <td><?= $row['isi_solusi']; ?></td>
                                             <td>
-                                                <a href="hapus.php?id=<?= $row['kode_bertanya']; ?>" class="btn btn-danger">Hapus</a>
+                                                <a href="hapus.php?kode_history=<?= $row['kode_history']; ?>" class="btn btn-danger" onclick="return confirm('Apakah anda yakin?')">Hapus</a>
                                             </td>
                                         </tr>
                                     </tbody>

@@ -1,9 +1,12 @@
 <?php
 include "../koneksi.php";
-$id = $_GET['kode_bertanya'];
-$sql1 = "DELETE FROM tb_bertanya WHERE kode_bertanya='$id'";
-if (mysqli_query($connect,$sql1)){
-    echo "<script>alert('Pertanyaan berhasil di hapus!'); window.location=('index.php');</script>";
-//echo "<script type='text/javascript'>window.location.replace('pakar-mode.php');</script>";
+$id = $_GET['kode_history'];
+$delete = mysqli_query($connect,"DELETE FROM tb_history WHERE kode_history='$id'");
+
+if ($delete) {
+    header("Location:index.php");
+}else{
+    echo"Terjadi Kesalahan ".mysqli_error($connect);
 }
+
 ?>

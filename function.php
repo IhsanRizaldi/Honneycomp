@@ -1,139 +1,101 @@
 <?php
 
 function answer($kode){
-    if($kode=='m1'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m2'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m14'>Tidak</a>";
+    if($kode=='p-1'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='pertanyaan.php?kode=p-1a'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='pertanyaan.php?kode=p-2'>Tidak</a>";
     }
-    if($kode=='m2'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m3-a'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m3-b'>Tidak</a>";
+    if($kode=='p-1a'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=s-1a'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=s-1b'>Tidak</a>";
+    }
+
+    if($kode=='p-2'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='pertanyaan.php?kode=p-2a'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='pertanyaan.php?kode=p-3'>Tidak</a>";
+    }
+    if($kode=='p-2a'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=s-2a'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=s-2b'>Tidak</a>";
     }
 
 
-    if($kode=='m3-a'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m4-a'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m8-a'>Tidak</a>";
+    if($kode=='p-3'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='pertanyaan.php?kode=p-3a'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='pertanyaan.php?kode=p-4'>Tidak</a>";
     }
-    if($kode=='m4-a'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m5-a'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s12'>Tidak</a>";
+    if($kode=='p-3a'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=s-3a'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=s-3b'>Tidak</a>";
     }
-    if($kode=='m5-a'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m6-a'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m7-a'>Tidak</a>";
+
+
+    if($kode=='p-4'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='pertanyaan.php?kode=p-4a'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='pertanyaan.php?kode=p-5'>Tidak</a>";
     }
-    if($kode=='m6-a'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s1'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s2'>Tidak</a>";
+    if($kode=='p-4a'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=s-4a'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=s-4b'>Tidak</a>";
     }
-    if($kode=='m7-a'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s3'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s4'>Tidak</a>";
+
+    if($kode=='p-5'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='pertanyaan.php?kode=p-5a'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='pertanyaan.php?kode=p-6'>Tidak</a>";
+    }
+    if($kode=='p-5a'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=s-5a'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=s-5b'>Tidak</a>";
+    }
+
+    if($kode=='p-6'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='pertanyaan.php?kode=p-6a'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='pertanyaan.php?kode=p-7'>Tidak</a>";
+    }
+    if($kode=='p-6a'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=s-6a'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=s-6b'>Tidak</a>";
+    }
+
+    if($kode=='p-7'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='pertanyaan.php?kode=p-7a'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='pertanyaan.php?kode=p-8'>Tidak</a>";
     }    
-    if($kode=='m8-a'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m9-a'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m10-a'>Tidak</a>";
-    }
-    if($kode=='m9-a'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s5'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s6'>Tidak</a>";
-    }
-    if($kode=='m10-a'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m11-a'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m12-a'>Tidak</a>";
-    }
-    if($kode=='m11-a'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s7'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s8'>Tidak</a>";
-    }
-    if($kode=='m12-a'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s9'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m13-a'>Tidak</a>";
-    }
-    if($kode=='m13-a'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s10'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s11'>Tidak</a>";
-    }
-
-
-
-    if($kode=='m3-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m4-b'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m8-b'>Tidak</a>";
-    }
-    if($kode=='m4-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m5-b'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s24'>Tidak</a>";
-    }
-    if($kode=='m5-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m6-b'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m7-b'>Tidak</a>";
-    }
-    if($kode=='m6-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s13'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s14'>Tidak</a>";
-    }
-    if($kode=='m7-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s15'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s16'>Tidak</a>";
+    if($kode=='p-7a'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='pertanyaan.php?kode=p-7b'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=s-7c'>Tidak</a>";
     }    
-    if($kode=='m8-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m9-b'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m10-b'>Tidak</a>";
-    }
-    if($kode=='m9-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s17'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s18'>Tidak</a>";
-    }
-    if($kode=='m10-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m11-b'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m12-b'>Tidak</a>";
-    }
-    if($kode=='m11-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s19'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s20'>Tidak</a>";
-    }
-    if($kode=='m12-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s21'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m13-b'>Tidak</a>";
-    }
-    if($kode=='m13-b'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s22'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s23'>Tidak</a>";
-    }
-
-
-    if($kode=='m14'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m15'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m16'>Tidak</a>";
-    }
-    if($kode=='m15'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s25'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s26'>Tidak</a>";
+    if($kode=='p-7b'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=s-7a'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=s-7b'>Tidak</a>";
     }    
-    if($kode=='m16'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m17'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m18'>Tidak</a>";
+
+    if($kode=='p-8'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='pertanyaan.php?kode=p-8a'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='pertanyaan.php?kode=p-9'>Tidak</a>";
     }
-    if($kode=='m17'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s27'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s28'>Tidak</a>";
+    if($kode=='p-8a'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='pertanyaan.php?kode=p-8b'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=s-8c'>Tidak</a>";
     }
-    if($kode=='m18'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='pertanyaan.php?kode=m19'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s31'>Tidak</a>";
-    }
-    if($kode=='m19'){
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s29'>Ya</a>";
-        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-light' href='solusi.php?kode=s30'>Tidak</a>";
+    if($kode=='p-8b'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=s-8a'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=s-8b'>Tidak</a>";
     }
 
+    if($kode=='p-9'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='pertanyaan.php?kode=p-9a'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=x-1'>Tidak</a>";
+    }
+    if($kode=='p-9a'){
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=s-9a'>Ya</a>";
+        echo "<a class='btn col-sm-1 mrg btn-lg btn-outline-dark' href='solusi.php?kode=s-9b'>Tidak</a>";
+    }
 }
 
-function kesimpulan($jurusan){
+function kesimpulan($solusi){
     include 'koneksi.php';
-    $sql = "SELECT * from tb_kesimpulan WHERE solusi='$jurusan' AND status='setuju'";
+    $sql = "SELECT * from tb_kesimpulan WHERE solusi='$solusi' AND status='setuju'";
     $data = mysqli_query($connect,$sql);
     while ($row = mysqli_fetch_assoc($data)) {
         echo '<p>-'.$row['fakta'].'</p>';
@@ -141,129 +103,194 @@ function kesimpulan($jurusan){
 }
 
 function solusi($kode){    
-    if ($kode=='s1') {
-        $jurusan = "Informatika";
-        kesimpulan($jurusan);        
+    if ($kode=='s-1a') {
+        $solusi = "s-1a";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);     
     }
-    if ($kode=='s2') {
-        $jurusan = "Sistem Informasi";
-        kesimpulan($jurusan);
+    if ($kode=='s-1b') {
+        $solusi = "s-1b";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);
     }
-    if ($kode=='s3') {
-        $jurusan = "Arsitektur";
-        kesimpulan($jurusan);
+    if ($kode=='s-2a') {
+        $solusi = "s-2a";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);
     }
-    if ($kode=='s4') {
-        $jurusan = "Desain Produk";
-        kesimpulan($jurusan);
+    if ($kode=='s-2b') {
+        $solusi = "s-2b";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);
     }
-    if ($kode=='s5') {
-        $jurusan = "Akuntansi";
-        kesimpulan($jurusan);
+    if ($kode=='s-3a') {
+        $solusi = "s-3a";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);
     }
-    if ($kode=='s6') {
-        $jurusan = "Manajemen";
-        kesimpulan($jurusan);
+    if ($kode=='s-3b') {
+        $solusi = "s-3b";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);
     }
-    if ($kode=='s7') {
-        $jurusan = "Kedokteran";
-        kesimpulan($jurusan);
+    if ($kode=='s-4a') {
+        $solusi = "s-4a";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);
     }
-    if ($kode=='s8') {
-        $jurusan = "Bioteknologi";
-        kesimpulan($jurusan);
+    if ($kode=='s-4b') {
+        $solusi = "s-4b";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);
     }
-    if ($kode=='s9') {
-        $jurusan = "Teologi";
-        kesimpulan($jurusan);
+    if ($kode=='s-5a') {
+        $solusi = "s-5a";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);
     }
-    if ($kode=='s10') {
-        $jurusan = "Pendidikan Bahasa Inggris";
-        kesimpulan($jurusan);
+    if ($kode=='s-5b') {
+        $solusi = "s-5b";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);
     }
-    if ($kode=='s11') {
-        $jurusan = "x-1";
-        kesimpulan($jurusan);
+    if ($kode=='s-6a') {
+        $solusi = "s-6a";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);
     }
-     if ($kode=='s12') {
-        $jurusan = "x-2";
-        kesimpulan($jurusan);
+     if ($kode=='s-6b') {
+        $solusi = "s-6b";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);
     }
-    if ($kode=='s13') {
-        $jurusan = "Informatika (non IPA)";
-        kesimpulan($jurusan);
+     if ($kode=='s-7a') {
+        $solusi = "s-7a";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);
     }
-    if ($kode=='s14') {
-        $jurusan = "Sistem Informasi (non IPA)";
-        kesimpulan($jurusan);
+     if ($kode=='s-7b') {
+        $solusi = "s-7b";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);
     }
-    if ($kode=='s15') {
-        $jurusan = "Arsitektur (non IPA)";
-        kesimpulan($jurusan);
+     if ($kode=='s-7c') {
+        $solusi = "s-7c";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);
     }
-    if ($kode=='s16') {
-        $jurusan = "Desain Produk (non IPA)";
-        kesimpulan($jurusan);        
+     if ($kode=='s-8a') {
+        $solusi = "s-8a";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);
     }
-    if ($kode=='s17') {
-        $jurusan = "Akuntansi (non IPA)";
-        kesimpulan($jurusan);
-    } 
-    if ($kode=='s18') {
-        $jurusan = "Manajemen (non IPA)";
-        kesimpulan($jurusan);
+     if ($kode=='s-8b') {
+        $solusi = "s-8b";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);
     }
-    if ($kode=='s19') {
-        $jurusan = "Kedokteran (non IPA)";
-        kesimpulan($jurusan);
+     if ($kode=='s-8c') {
+        $solusi = "s-8c";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);
     }
-    if ($kode=='s20') {
-        $jurusan = "Bioteknologi (non IPA)";
-        kesimpulan($jurusan);
+     if ($kode=='s-9a') {
+        $solusi = "s-9a";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);
     }
-     if ($kode=='s21') {
-        $jurusan = "Teologi (non IPA)";
-        kesimpulan($jurusan);
+     if ($kode=='s-9b') {
+        $solusi = "s-9b";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);
     }
-     if ($kode=='s22') {
-        $jurusan = "Pendidikan Bahasa Inggris (non IPA)";
-        kesimpulan($jurusan);
-    }
-     if ($kode=='s23') {
-        $jurusan = "x-3";
-        kesimpulan($jurusan);
-    }
-     if ($kode=='s24') {
-        $jurusan = "x-4";
-        kesimpulan($jurusan);   
-    }
-     if ($kode=='s25') {
-        $jurusan = "Arsitek (non SMA)";
-        kesimpulan($jurusan);
-    }
-     if ($kode=='s26') {
-        $jurusan = "Desain Produk (non SMA)";
-        kesimpulan($jurusan);
-    }
-     if ($kode=='s27') {
-        $jurusan = "Informatika (non SMA)";
-        kesimpulan($jurusan);
-    }
-     if ($kode=='s28') {
-        $jurusan = "Sistem Informasi (non SMA)";
-        kesimpulan($jurusan);
-    }
-     if ($kode=='s29') {
-        $jurusan = "Akutansi (non SMA)";
-        kesimpulan($jurusan);
-    }
-     if ($kode=='s30') {
-        $jurusan = "Manajemen (non SMA)";
-        kesimpulan($jurusan);
-    }
-     if ($kode=='s31') {
-        $jurusan = "x-5";
-        kesimpulan($jurusan);
+     if ($kode=='x-1') {
+        $solusi = "x-1";
+        kesimpulan($solusi);
+        include 'koneksi.php';
+        $nama = $_SESSION['nama'];
+        $kode = kesimpulan($solusi);
+        $sql1 = "INSERT INTO tb_history (nama, kode_solusi) VALUES ('$nama', '$solusi')";
+        mysqli_query($connect,$sql1);
     }
 }
 

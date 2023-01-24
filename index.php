@@ -7,14 +7,14 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="icon" href="gambar/icon.jpeg">
     <title>Honneycomp || Dashboard</title>
   </head>
   <body>
    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffb703;">
         <div class="container">
-            <a class="navbar-brand" href="#">Honneycomp</a>
+            <a class="navbar-brand" href="index.php"><img src="gambar/icon.jpeg" alt="" width="50"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,10 +32,10 @@
    <div class="p-5 mb-4 rounded-3 mt-3 mb-3">
             <div class="container-fluid py-5">
                 <h1 class="display-5 fw-bold">Selamat Datang Di Honneycomp</h1>
-                <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+                <p class="col-md-8 fs-4"><img src="gambar/icon.jpeg" alt="" width="500"></p>
                 <!-- Modal -->
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #ffb703;">
                 Mulai
                 </button>
 
@@ -43,7 +43,7 @@
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header" style="background-color: #ffb703;">
                         <h5 class="modal-title" id="exampleModalLabel">Honneycomp Computer Expert System</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -56,7 +56,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Lanjut</button>
+                        <button type="submit" class="btn" style="background-color: #ffb703;">Lanjut</button>
                         </form>
                     </div>
                     </div>
@@ -71,7 +71,7 @@
         <div class="col-md-4 mt-3 mb-3 ">
         <div class="card" style="width: 18rem;">
         <img src="gambar/gambar.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+        <div class="card-body" style="background-color: #ffb703;">
             <h5 class="card-title">Raka Amin Nur Soleh</h5>
             <p class="card-text">17211025</p>
         </div>
@@ -80,7 +80,7 @@
         <div class="col-md-4 mt-3 mb-3">
         <div class="card" style="width: 18rem;">
         <img src="gambar/gambar.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+        <div class="card-body" style="background-color: #ffb703;">
             <h5 class="card-title">Taufan Prawira Ansori</h5>
             <p class="card-text">17211001</p>
         </div>
@@ -89,7 +89,7 @@
         <div class="col-md-4 mt-3 mb-3">
         <div class="card" style="width: 18rem;">
         <img src="gambar/gambar.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+        <div class="card-body" style="background-color: #ffb703;">
             <h5 class="card-title">Putri Defa Yanti</h5>
             <p class="card-text">17213003</p>
         </div>
@@ -100,7 +100,7 @@
     <div class="col-md-4 mt-3 mb-3 ">
         <div class="card" style="width: 18rem;">
         <img src="gambar/gambar.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+        <div class="card-body" style="background-color: #ffb703;">
             <h5 class="card-title">Ogi Rahmansyah</h5>
             <p class="card-text">17213105</p>
         </div>
@@ -109,7 +109,7 @@
     <div class="col-md-4 mt-3 mb-3 ">
         <div class="card" style="width: 18rem;">
         <img src="gambar/gambar.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+        <div class="card-body" style="background-color: #ffb703;">
             <h5 class="card-title">Ihsan Rizaldi</h5>
             <p class="card-text">17213026</p>
         </div>

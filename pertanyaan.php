@@ -7,21 +7,21 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <link rel="icon" href="gambar/icon.jpeg">
     <title>Honneycomp || Pertanyaan</title>
   </head>
   <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffb703;">
         <div class="container">
-            <a class="navbar-brand" href="#">Honneycomp</a>
+            <a class="navbar-brand" href="#"><img src="gambar/icon.jpeg" alt="" width="50"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Login Pakar</a>
+                <a class="nav-link active" aria-current="page" href="#">Login</a>
                 </li>
             </div>
         </div>
@@ -30,15 +30,15 @@
   <!-- Content -->
   <div class="container">
   <main class="batas-atas">
-        <div class="card text-light bg-primary text-center mb-3 mt-3">
-          <h5 class="card-header">Pertanyaan Diagnosis</h5>
+        <div class="card text-center mb-3 mt-3" >
+          <h5 class="card-header" style="background-color: #ffb703;">Pertanyaan Diagnosis</h5>
           <div class="card-body text-center ukuran-30">
 
             <form method="post" action="input-ketampung.php" enctype="multipart/form-data" role="form">
 
                 <?php
                 include ('koneksi.php');
-                $kode='m1';
+                $kode='p-1';
                 session_start();
                 echo "<p>Hai, ".$_SESSION['nama']."</p>";
                     
