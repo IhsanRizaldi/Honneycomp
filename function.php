@@ -105,7 +105,6 @@ function kesimpulan($solusi){
 function solusi($kode){    
     if ($kode=='s-1a') {
         $solusi = "s-1a";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);
@@ -114,7 +113,6 @@ function solusi($kode){
     }
     if ($kode=='s-1b') {
         $solusi = "s-1b";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);
@@ -123,7 +121,6 @@ function solusi($kode){
     }
     if ($kode=='s-2a') {
         $solusi = "s-2a";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);
@@ -132,7 +129,6 @@ function solusi($kode){
     }
     if ($kode=='s-2b') {
         $solusi = "s-2b";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);
@@ -141,7 +137,6 @@ function solusi($kode){
     }
     if ($kode=='s-3a') {
         $solusi = "s-3a";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);
@@ -150,7 +145,6 @@ function solusi($kode){
     }
     if ($kode=='s-3b') {
         $solusi = "s-3b";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);
@@ -159,7 +153,6 @@ function solusi($kode){
     }
     if ($kode=='s-4a') {
         $solusi = "s-4a";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);
@@ -168,7 +161,6 @@ function solusi($kode){
     }
     if ($kode=='s-4b') {
         $solusi = "s-4b";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);
@@ -177,7 +169,6 @@ function solusi($kode){
     }
     if ($kode=='s-5a') {
         $solusi = "s-5a";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);
@@ -186,7 +177,6 @@ function solusi($kode){
     }
     if ($kode=='s-5b') {
         $solusi = "s-5b";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);
@@ -195,7 +185,6 @@ function solusi($kode){
     }
     if ($kode=='s-6a') {
         $solusi = "s-6a";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);
@@ -204,7 +193,6 @@ function solusi($kode){
     }
      if ($kode=='s-6b') {
         $solusi = "s-6b";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);
@@ -213,7 +201,6 @@ function solusi($kode){
     }
      if ($kode=='s-7a') {
         $solusi = "s-7a";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);
@@ -222,7 +209,6 @@ function solusi($kode){
     }
      if ($kode=='s-7b') {
         $solusi = "s-7b";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);
@@ -231,7 +217,6 @@ function solusi($kode){
     }
      if ($kode=='s-7c') {
         $solusi = "s-7c";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);
@@ -240,7 +225,6 @@ function solusi($kode){
     }
      if ($kode=='s-8a') {
         $solusi = "s-8a";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);
@@ -249,7 +233,6 @@ function solusi($kode){
     }
      if ($kode=='s-8b') {
         $solusi = "s-8b";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);
@@ -258,7 +241,6 @@ function solusi($kode){
     }
      if ($kode=='s-8c') {
         $solusi = "s-8c";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);
@@ -267,7 +249,6 @@ function solusi($kode){
     }
      if ($kode=='s-9a') {
         $solusi = "s-9a";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);
@@ -276,7 +257,6 @@ function solusi($kode){
     }
      if ($kode=='s-9b') {
         $solusi = "s-9b";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);
@@ -285,7 +265,6 @@ function solusi($kode){
     }
      if ($kode=='x-1') {
         $solusi = "x-1";
-        kesimpulan($solusi);
         include 'koneksi.php';
         $nama = $_SESSION['nama'];
         $kode = kesimpulan($solusi);

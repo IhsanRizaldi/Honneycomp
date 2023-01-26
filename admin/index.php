@@ -122,7 +122,7 @@ if (!isset($_SESSION['login'])) {
                                     <thead>
                                         <tr>
                                             <th>Nama</th>
-                                            <th>kode_solusi</th>
+                                            <th>Kode Solusi</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
