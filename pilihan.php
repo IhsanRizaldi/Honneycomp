@@ -31,25 +31,18 @@
   <div class="container">
   <main class="batas-atas">
         <div class="card text-center mb-3 mt-3" >
-          <h5 class="card-header" style="background-color: #ffb703;">Pertanyaan Diagnosis</h5>
+          <h5 class="card-header" style="background-color: #ffb703;">Pilihan Diagnosa</h5>
           <div class="card-body text-center ukuran-30">
 
-            <form action="solusi.php" method="POST">
-            <select name="kode_pertanyaan" id="kode_pertanyaan" class="form-control text-center">
-            <option value="">---- Pilih Gejala ----</option>
             <?php
                 require "koneksi.php";
-                $kode_kerusakan = $_GET['kode_kerusakan'];
-                $sql = mysqli_query($connect,"SELECT*FROM tb_pertanyaan WHERE kode_kerusakan = '$kode_kerusakan'");
+                $sql = mysqli_query($connect,"SELECT*FROM tb_kerusakan");
                 while($row = mysqli_fetch_assoc($sql)):
             ?>
-                    <option value="<?= $row['kode_pertanyaan'] ?>"><?= $row['pertanyaan'] ?></option>
+                <a href="pertanyaan.php?kode_kerusakan=<?= $row['kode_kerusakan'] ?>" class="btn btn-warning"><?= $row['nama_komponen'] ?></a>
             <?php
                 endwhile;
             ?>
-            </select>
-            <button type="submit" class="mt-3 btn btn-warning">Lihat Solusi</button>
-            </form>
 
           </div>
         </div>

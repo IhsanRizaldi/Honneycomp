@@ -34,47 +34,28 @@
         <div class="card mb-3 mt-3 ">
           <h5 class="card-header text-center" style="background-color: #ffb703;">Solusi</h5>
           <div class="card-body text-left ukuran-20">
-
-            <form method="post" action="solusi.php" enctype="multipart/form-data" role="form">
-
                 <?php
-                include ('koneksi.php');
-                //$kode='m01';
+                require 'koneksi.php';
                 session_start();
-                echo "<p>Nama : ".$_SESSION['nama']."</p>";
-                    
-                    if(isset($_GET['kode'])){
-                        $kode=$_GET['kode'];
-                    }   
+                echo "<p>Nama : ".$_SESSION['nama']."</p>";   
+                echo "<hr>";
+                $kode_pertanyaan = $_POST['kode_pertanyaan'];
+                $query = mysqli_query($connect,"SELECT * FROM tb_pertanyaan WHERE kode_pertanyaan = '$kode_pertanyaan'");
+                $row = mysqli_fetch_assoc($query);
                 ?>
-                <hr>
-                <p>Diagnosa Komputer :</p>
-                <?php
-                 include "function.php";
-                 solusi($kode);  
-                ?>
-                
-
+                <h4>Gejala :</h4>
+                <ul>
+                  <li><?= $row['pertanyaan'] ?></li>
+                </ul>
                 <hr>
                 <?php
-                $sql = "SELECT * from tb_solusi WHERE kode_solusi='$kode'";
-                $data = mysqli_query($connect,$sql);
-                $row = mysqli_fetch_assoc($data);
-
-                if ($row['kode_solusi']=="x-1" || $row['isi_solusi']=="x-2" || $row['isi_solusi']=="x-3" || $row['isi_solusi']=="x-4" || $row['isi_solusi']=="x-5") {
-                  echo "<center><p><strong style='color:red'>SISTEM TIDAK MENEMUKAN JAWABAN !</strong></p></center><hr>";
-                  ?>
-                   
-                  <?php 
-             }
-             
-             else{
-                 echo "<p>Solusi : <strong style='color:red'>".$row['isi_solusi']."</strong></p>";
-             }
-                
+                $sql = mysqli_query($connect,"SELECT tb_pertanyaan.kode_solusi, tb_solusi.solusi FROM tb_pertanyaan inner join tb_solusi on tb_pertanyaan.kode_solusi=tb_solusi.kode_solusi WHERE kode_pertanyaan = '$kode_pertanyaan'");
+                $hasil = mysqli_fetch_assoc($sql);
                 ?>
-            </form>
-            <br>
+                <h4>Solusi :</h4>
+                <ul>
+                  <li><?= $hasil['solusi'] ?></li>
+                </ul>
             <div class="text-center">
                 <a style="margin-bottom: 10px;" href="session_end.php" class="btn btn-outline-dark col-sm-2">Selesai</a>
             </div>
